@@ -1,0 +1,10 @@
+por employe
+
+session_start();
+if (!isset($_SESSION['cedula'])) {
+    header("Location: login.html");
+    exit;
+}
+
+// Aquí continúa la lógica de tu sistema de empleados
+echo "Bienvenido: " . $_SESSION['cedula'];
